@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awaken Your True Self Through Breath, Nature & Presence</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #8BA888;
+            --light-green: #C8D5B9;
+            --neutral-beige: #F5F1E6;
+            --warm-orange: #E3A87B;
+            --dark-brown: #4A3F35;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--dark-brown);
+            background-color: var(--neutral-beige);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(75, 63, 53, 0.7), rgba(75, 63, 53, 0.7)), url('https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-green);
+            border-color: var(--primary-green);
+            padding: 10px 25px;
+            font-weight: 600;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--dark-brown);
+            border-color: var(--dark-brown);
+        }
+        
+        .btn-secondary {
+            background-color: var(--warm-orange);
+            border-color: var(--warm-orange);
+            color: white;
+            padding: 10px 25px;
+            font-weight: 600;
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--dark-brown);
+            border-color: var(--dark-brown);
+            color: white;
+        }
+        
+        .service-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+            height: 100%;
+            background-color: white;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .service-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .service-card .card-body {
+            padding: 25px;
+        }
+        
+        .about-section {
+            background-color: white;
+            padding: 80px 0;
+        }
+        
+        .app-section {
+            background-color: var(--light-green);
+            padding: 80px 0;
+        }
+        
+        .community-section {
+            background: linear-gradient(rgba(139, 168, 136, 0.9), rgba(139, 168, 136, 0.9)), url('https://images.unsplash.com/photo-1545389336-cf090694435e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .testimonial-card img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        
+        .sticky-cta {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: none;
+        }
+        
+        footer {
+            background-color: var(--dark-brown);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .social-icon {
+            color: white;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        
+        .social-icon:hover {
+            color: var(--warm-orange);
+        }
+        
+        .app-mockup {
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h3 class="m-0" style="color: var(--primary-green);">Yoga & Breath</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offerings">Offerings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#emberkind">Emberkind</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#community">Community</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary" href="https://wa.me/1234567890" target="_blank">Join Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Awaken Your True Self Through Breath, Nature & Presence</h1>
+                    <p class="lead mb-5">Join 1.5-hour transformational breathwork sessions, guided nature immersions, and conscious community circles. Get exclusive access to the Emberkind AI healing app.</p>
+                    <a href="https://wa.me/1234567890" class="btn btn-primary btn-lg me-3" target="_blank">Join the Community</a>
+                    <a href="#offerings" class="btn btn-outline-light btn-lg">Explore Offerings</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offerings Section -->
+    <section id="offerings" class="py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-3">Transformational Offerings</h2>
+                    <p class="lead">Choose your path to awakening and healing</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1520&q=80" class="card-img-top" alt="Breathwork">
+                        <div class="card-body">
+                            <h4 class="card-title">Transformational Breathwork</h4>
+                            <p class="card-text">1.5-hour guided sessions to release emotional blockages, reduce stress, and access higher states of consciousness.</p>
+                            <a href="https://wa.me/1234567890" class="btn btn-sm btn-primary" target="_blank">Book Session</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Nature Hike">
+                        <div class="card-body">
+                            <h4 class="card-title">Nature Immersion Hikes</h4>
+                            <p class="card-text">Group hikes combined with mindfulness practices to deepen your connection with nature and yourself.</p>
+                            <a href="https://wa.me/1234567890" class="btn btn-sm btn-primary" target="_blank">Join a Hike</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1399&q=80" class="card-img-top" alt="Presence Circle">
+                        <div class="card-body">
+                            <h4 class="card-title">Presence Circles</h4>
+                            <p class="card-text">Wisdom-sharing gatherings and Satsang talks to explore spiritual teachings in a supportive community.</p>
+                            <a href="https://wa.me/1234567890" class="btn btn-sm btn-primary" target="_blank">Attend Circle</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" class="card-img-top" alt="Emberkind App">
+                        <div class="card-body">
+                            <h4 class="card-title">Emberkind AI App</h4>
+                            <p class="card-text">Exclusive access to our AI-powered healing ecosystem for personalized guidance and support.</p>
+                            <a href="#emberkind" class="btn btn-sm btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1520&q=80" class="img-fluid rounded" alt="Yoga Teacher">
+                </div>
+                <div class="col-lg-7 ps-lg-5">
+                    <h2 class="fw-bold mb-4">Meet Your Guide</h2>
+                    <p class="lead mb-4">Bridging healing and awakening to help you live freely as your truest self.</p>
+                    <p>With over a decade of experience in yoga, breathwork, and spiritual guidance, I've dedicated my life to helping others find their path to wholeness. My approach blends ancient wisdom with modern therapeutic techniques to create transformative experiences.</p>
+                    <p>I believe true healing happens when we reconnect with our essential nature - through the breath, through nature, and through authentic community. My offerings are designed to facilitate this reconnection at the deepest level.</p>
+                    <a href="https://wa.me/1234567890" class="btn btn-primary mt-3" target="_blank">Connect With Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emberkind App Section -->
+    <section id="emberkind" class="app-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Emberkind AI Healing App</h2>
+                    <p class="lead mb-4">Your personal guide to healing and awakening, powered by AI.</p>
+                    <p>The Emberkind app provides personalized meditation, breathwork, and healing recommendations based on your unique needs and progress. As a community member, you get exclusive early access to this revolutionary tool.</p>
+                    <ul class="mb-4">
+                        <li>AI-powered guided meditations</li>
+                        <li>Personalized breathwork sequences</li>
+                        <li>Emotional state tracking</li>
+                        <li>Wisdom teachings library</li>
+                        <li>Community features</li>
+                    </ul>
+                    <a href="https://play.google.com/store/apps" class="btn btn-secondary" target="_blank">Download Beta on Play Store</a>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" class="app-mockup img-fluid" alt="Emberkind App">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="community-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-4">Join Our Growing Conscious Community</h2>
+                    <p class="lead mb-5">Connect with like-minded seekers on WhatsApp for updates, events, and support on your journey.</p>
+                    <a href="https://wa.me/1234567890" class="btn btn-light btn-lg px-5" target="_blank">Connect Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-3">What Participants Say</h2>
+                    <p class="lead">Experiences from our community</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Testimonial 1">
+                        <h5 class="mb-3">Sarah K.</h5>
+                        <p class="mb-0">"The breathwork sessions have been life-changing. I've released so much stored tension and feel more alive than ever."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Testimonial 2">
+                        <h5 class="mb-3">Michael T.</h5>
+                        <p class="mb-0">"The nature hikes combine physical activity with deep mindfulness in a way I've never experienced before."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Testimonial 3">
+                        <h5 class="mb-3">Priya M.</h5>
+                        <p class="mb-0">"The Emberkind app is revolutionary. It's like having a spiritual guide in my pocket at all times."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section class="py-5" style="background-color: var(--neutral-beige);">
+        <div class="container py-4 text-center">
+            <h2 class="fw-bold mb-3">Coming Soon: Online Courses & Retreats!</h2>
+            <p class="lead mb-4">Be the first to know when we launch our expanded offerings.</p>
+            <form class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Your email address">
+                        <button class="btn btn-primary" type="button">Notify Me</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="text-white mb-4">Yoga & Breath</h4>
+                    <p>Awakening through breath, nature, and presence.</p>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#offerings" class="text-white text-decoration-none">Offerings</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="#emberkind" class="text-white text-decoration-none">Emberkind App</a></li>
+                        <li class="mb-2"><a href="#community" class="text-white text-decoration-none">Community</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="text-white mb-4">Connect</h4>
+                    <a href="https://instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/1234567890" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://play.google.com/store/apps" class="social-icon" target="_blank"><i class="fab fa-google-play"></i></a>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0">&copy; 2023 Yoga & Breath. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0">Designed with <i class="fas fa-heart" style="color: var(--warm-orange);"></i> for awakening souls</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky CTA Button -->
+    <div class="sticky-cta">
+        <a href="https://wa.me/1234567890" class="btn btn-primary btn-lg shadow" target="_blank">Join Now</a>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Show sticky CTA on scroll
+        window.addEventListener('scroll', function() {
+            const stickyCta = document.querySelector('.sticky-cta');
+            if (window.pageYOffset > 300) {
+                stickyCta.style.display = 'block';
+            } else {
+                stickyCta.style.display = 'none';
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
